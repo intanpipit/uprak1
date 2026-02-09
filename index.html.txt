@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistem Informasi Barang - SMAN 1 Magetan</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <h1 class="logo">Smapa<span>LostFound</span></h1>
+            <ul>
+                <li><a href="#" class="active">Beranda</a></li>
+                <li><a href="#daftar-barang">Daftar Barang</a></li>
+                <li><a href="#">Laporkan</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="container">
+            <h2>Temukan Barang Anda Kembali</h2>
+            <p>Pusat informasi barang hilang dan barang titipan di lingkungan SMAN 1 Magetan.</p>
+            <div class="stats">
+                <div class="stat-item"><strong>15</strong><br>Barang Hilang</div>
+                <div class="stat-item"><strong>8</strong><br>Barang Titipan</div>
+                <div class="stat-item"><strong>42</strong><br>Selesai</div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container" id="daftar-barang">
+        <section class="controls">
+            <input type="text" id="searchInput" placeholder="Cari nama barang...">
+            <select id="filterCategory">
+                <option value="all">Semua Kategori</option>
+                <option value="Hilang">Barang Hilang</option>
+                <option value="Titipan">Barang Titipan</option>
+            </select>
+        </section>
+
+        <div class="grid" id="itemGrid">
+            </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 SMAN 1 Magetan - Dikembangkan untuk Kemudahan Siswa</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
